@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+var real_name = localStorage.getItem("Is_name");
+var real_age = localStorage.getItem("Is_age");
+var biog = localStorage.getItem("Is_bio");
+var occu = localStorage.getItem("Is_occ");
+var c1 = localStorage.getItem("Is_colour1");
+var c2 = localStorage.getItem("Is_colour2");
+var c3 = localStorage.getItem("Is_colour3");
+var g1 = localStorage.getItem("Is_goal1");
+var g2 = localStorage.getItem("Is_goal2");
+var g3 = localStorage.getItem("Is_goal3");
+var bd = localStorage.getItem("Is_bday");
+var qu = localStorage.getItem("Is_quote");
+</script>
+
+<body class = "body">
+
+<div id="header">
+<h3><script>document.write(real_name)</script></h3>
+</div>
+
+<div id="first">
+    <h1><script>document.write("Hi I am " + real_name)</script></h1>
+
+<ul>
+    <li><script>document.write("I am a: " + occu)</script></li>
+    <li><script>document.write("Today I am currently: " + real_age + " years old")</script></li>
+    <li><script>document.write("My birthdate is on: " + bd)</script></li>
+</ul>
+</div>
+
+<div id="second">
+    <h2>My Current Goals:</h2>
+<ul>
+    <li><script>document.write(g1)</script></li>
+    <li><script>document.write(g2)</script></li>
+    <li><script>document.write(g3)</script></li>
+</ul>
+</div>
+
+<div id="faceprofile">
+ <script>document.write("My favourtite quote is: \""+ qu + "\"")</script>
+
+</div>
+
+<button id = "but" class = "bro">
+<a href="/" id="gen">Generate another website</a> 
+</button>
+
+
+<script>
+    document.getElementById("first").style.backgroundColor = c1;
+    document.getElementById("second").style.backgroundColor = c2;
+    document.getElementById("faceprofile").style.backgroundColor = c3;
+    document.getElementById("but").style.backgroundColor = c1;
+</script>
+
+<style>
+
+#header{
+    height: 100px;
+    background-color: antiquewhite;
+    padding-top: 1rem;
+}
+
+h3{
+margin: 1rem;
+text-align: center;
+font-size: 60px;
+}
+
+ul{
+    list-style-type: circle;
+    font-size: 30px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#faceprofile{
+font-size: 50px;
+}
+
+#first{
+    height: 250px;
+}
+#second{
+    height: 230px;
+    margin-top: -20px;
+}
+
+h1{
+    margin: 10px;
+    margin-top: 0px;
+    font-size: 80px;
+}
+h2{
+    margin: 20px;
+    font-size: 60px;
+}
+
+#gen{
+    font-size: large;
+    color: white;
+}
+
+.bro:hover{
+    transition: 0.2s ease-in;
+    opacity: 90%;
+}
+#but{
+    margin: 10px;
+    height: 50px;
+    border-radius: 1rem;
+}
+
+
+</style>
+
+
+
+
+</body>
+</html>

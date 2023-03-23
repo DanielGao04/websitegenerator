@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="formti">Form</title>
+</head>
+<h1 class="bigh">PERSONAL WEBSITE CREATOR</h1>
+
+<body>
+
+  <form class="aform" methods="GET" onsubmit="myfunc(event)" action="results.html">
+
+<section id = "sect1">
+
+  <h3 id= "head1">About You</h3>
+  <div id="w1">
+ 
+    <div>
+      <label> Name
+        <input id= "name" type="text" name = "name">
+      </label>
+    </div>
+  
+
+<div>
+  <label>Age
+    <input type="text" name = "age" id="age" >
+  </label>
+</div>
+
+<div>
+  <label> Write a bit about yourself
+    <input id= "bio" type="paragraph" name = "bio" placeholder="(Hobbies, Foods, Passions)">
+  </label>
+</div>
+
+<div>
+  <label> Current Occupation
+    <input id= "occ" type="paragraph" name = "occ" placeholder="Could be student">
+  </label>
+</div>
+
+<div>
+  <label> Birthdate
+    <input id= "bday" type="date" name = "bday">
+  </label>
+</div>
+
+<div>
+  <label> Favourite Quote
+    <input id= "quote" type="text" name = "quote">
+  </label>
+</div>
+
+</section>
+
+
+<section id="sect2">
+
+  <h1 id="head2">Your Goals</h1>
+  <div id="w3">
+<div>
+  <label> Goal 1
+    <input id= "goal1" type="paragraph" name = "goal1">
+  </label>
+</div>
+
+<div>
+<label> Goal 2
+  <input id= "goal2" type="paragraph" name = "goal2">
+</label>
+</div>
+
+<div>
+<label> Goal 3
+  <input id= "goal3" type="paragraph" name = "goal3">
+</label>
+</div>
+</div>
+</section>
+
+
+<section id="sect3">
+  <h3 id="head2">Colours</h3>
+<div id="w2">
+<div>
+  <label for="colour">Theme Colour 1</label>
+  <input type="color" name = "colour1" id="colour1">
+</div>
+
+<div>
+  <label for="colour">Theme Colour 2</label>
+  <input type="color" name = "colour2" id="colour2">
+</div>
+
+<div>
+  <label for="colour">Theme Colour 3</label>
+  <input type="color" name = "colour3" id="colour3">
+  </div>
+</div>
+
+</section>
+
+    <button class = "b1" type="reset">Reset</button>
+    <button class = "b2" type="submit">Save</button>
+    
+  </form>
+
+  <form action="results.html">
+    <button class = "b3" type="submit">Submit</button>
+  </form>
+
+  
+   
+<style>
+
+
+#sect1{
+  background-color: beige;
+  height: 16rem;
+  border-radius: 1rem;
+  outline: 1rem crimson;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sect2{
+  background-color: rgb(150, 219, 185);
+  height: 11rem;
+  border-radius: 1em;
+  outline: 1rem crimson;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#head2{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+#sect3{
+  background-color: rgb(219, 215, 238);
+  border-radius: 1rem;
+  height: 11rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#bio{ 
+  height:50px;
+  word-wrap: break-word;
+  border-radius: 1rem;
+  margin: 0.4rem;
+}
+
+#w1{
+  margin: 2rem;
+  
+}
+
+#w2{
+  margin: 2rem;
+}
+
+#w3{
+  margin: 2rem;
+}
+
+#head1{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+#head2{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.bigh{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+
+  .b1{
+  background-color: #fc9d22; 
+  border-style: groove;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.b1:hover{
+  transition: 0.2s ease-in;
+  background-color: rgb(218, 158, 47)
+}
+
+
+.b2{
+  background-color: #2dc24d;
+  border-style: groove;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.b2:hover{
+  transition: 0.2s ease-in;
+  background-color: rgb(54, 168, 64)
+}
+
+.b3{
+  background-color: #dce0b2;
+  border-style: groove;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.b3:hover{
+  transition: 0.2s ease-in;
+  background-color: rgb(171, 179, 131)
+}
+</style>
+
+<script>
+
+function myfunc(event){
+  event.preventDefault();
+  
+  var name = document.getElementById("name").value;
+  var age = document.getElementById("age").value;
+  var bio = document.getElementById("bio").value;
+  var occ = document.getElementById("occ").value;
+  var colour1 = document.getElementById("colour1").value;
+  var colour2 = document.getElementById("colour2").value;
+  var colour3 = document.getElementById("colour3").value;
+  var goal1 = document.getElementById("goal1").value;
+  var goal2 = document.getElementById("goal2").value;
+  var goal3 = document.getElementById("goal3").value;
+  var bday = document.getElementById("bday").value;
+  var quote = document.getElementById("quote").value;
+
+  localStorage.setItem('Is_name', name);
+  localStorage.setItem('Is_age', age);
+  localStorage.setItem('Is_bio', bio);
+  localStorage.setItem('Is_occ', occ);
+  localStorage.setItem('Is_colour1', colour1);
+  localStorage.setItem('Is_colour2', colour2);
+  localStorage.setItem('Is_colour3', colour3);
+  localStorage.setItem('Is_goal1', goal1);
+  localStorage.setItem('Is_goal2', goal2);
+  localStorage.setItem('Is_goal3', goal3);
+  localStorage.setItem('Is_bday', bday);
+  localStorage.setItem('Is_quote', quote);
+}
+  
+</script>
+
+
+
+</body>
+</html>
